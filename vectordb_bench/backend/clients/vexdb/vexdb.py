@@ -66,6 +66,8 @@ class VexDB(VectorDB):
     cursor: psycopg.Cursor[Any] | None = None
     _search: sql.Composed
 
+    thread_safe: bool = False
+
     def __init__(
         self,
         dim: int,

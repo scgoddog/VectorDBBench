@@ -170,7 +170,7 @@ class VexDBGRAPHINDEXConfig(VexDBIndexConfig):
 
     m: int | None  # DETAIL:  Valid values are between "2" and "100".
     ef_construction: int | None  # ef_construction must be greater than or equal to 2 * m
-    quantizer: str | None
+    quantizer: str | None = None
     ef_search: int | None
     index: IndexType = IndexType.GRAPH_INDEX
     maintenance_work_mem: str | None = None
